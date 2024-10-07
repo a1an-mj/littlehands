@@ -1,0 +1,55 @@
+/*buttons footer*/
+
+/* Dropdown Button */
+.dropbtn {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    color: rgb(32, 154, 178);
+    font-size: 16px;
+    border:none;
+    border-bottom: 0.5px solid black;
+    cursor: pointer;
+    padding: 18px 0; /* Adjust padding as needed */
+    width: 100%; /* Full width */
+    text-align: left; /* Optional: Align text to the left */
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+    color: black;
+}
+
+/* Dropdown container */
+.dropdown {
+    width: 100%; /* Ensure the container also takes full width */
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    background-color: rgb(245, 245, 245);
+    min-width: 100%; /* Make dropdown the same width as the button */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu when it is toggled */
+.show {
+    display: block;
+}
