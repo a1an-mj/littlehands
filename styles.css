@@ -154,6 +154,7 @@ h2{
 }
 
 .pg-btn {
+    text-decoration: none;
     display: block;
     margin: 15px auto;
     padding: 5px 10px;
