@@ -153,8 +153,11 @@ h2{
     margin: 0 50px;
 }
 
-.pg-btn {
+a{
     text-decoration: none;
+}
+
+.pg-btn {
     display: block;
     margin: 15px auto;
     padding: 5px 10px;
@@ -427,6 +430,7 @@ footer{
 
     .gallery{
         margin-top: 10px;
+        padding-top: 150px;
     }
 
     .gallery-main-container{
