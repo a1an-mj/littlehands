@@ -186,9 +186,14 @@ a{
 }
 
 .gallery-main-container{
-    width: auto;
-    background-color: rgb(228, 225, 225);
-    height: 101.87px;
+    display: flex;
+    padding: 0 10px;
+    gap: 5px;
+}
+
+.gallery-main-container img{
+    height: 101.84px;
+    width:85.55px;
 }
 
 .contact {
@@ -319,7 +324,9 @@ footer{
 
 /*----------------------------------------------------Responsive-----------------------------------------------------------------------*/
 
-@media only screen and (min-width: 768px) {
+
+
+@media only screen and (min-width: 1400px) {
     nav img{
         height: 57px;
         width: 145px;
@@ -438,8 +445,20 @@ footer{
     }
 
     .gallery-main-container{
-        height: 387px;
-        margin-bottom: 50px;
+        display: flex;
+        padding: 30px 25px;
+        gap: 30px;
+    }
+    
+    .gallery-main-container img{
+        height: 386.99px;
+        width:325px;
+        transition: 0.3s;
+    }
+
+    .gallery-main-container img:hover{
+        height: 416.99px;
+        width:355px;
     }
 
     .contact-img-text {
@@ -551,5 +570,15 @@ footer{
         margin-left: 80px;
         margin-right: 80px;
     }
+
+    .row{
+        gap: 243px;
+    }
+
+    .gallery-main-container{
+        padding: 30px 215px;
+        gap: 50px;
+    }
+    
     
 }
