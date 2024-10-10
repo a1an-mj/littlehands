@@ -297,6 +297,10 @@ footer{
     display: block;
 }
 
+.desk{
+    display: none;
+}
+
 /*==============about-us========================*/
 .about-us-content{
     margin-top: 140px;
@@ -462,6 +466,43 @@ footer{
         font-size: 53px;
         padding-left: 20px;
     }
+
+    .phn{
+        display: none;
+    }
+
+    .desk{
+        display: block;
+    }
+
+    .row{
+        display: flex;
+        gap: 136px;
+    }
+
+    .row p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(32, 154, 178);
+        font-size: 16px;
+        
+    }
+
+    .row p a{
+        color: rgb(32, 154, 178);
+        transition: 0.3s;
+    }
+    .row p a:hover{
+        color: rgb(14, 104, 122);
+        font-size: 18px;
+    }
+    
+
+    footer img{
+        width: 145px;
+        height: 57px;
+    }
+
+
 
     /*============ABOUT US===========*/
     .about-us-content{
