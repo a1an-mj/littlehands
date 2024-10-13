@@ -1,0 +1,584 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: white;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .50px solid black;
+    margin: 0;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav img{
+    height: 26px;
+    width: 67px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-family: 'More Sugar', cursive;
+    text-decoration: none;
+    color: rgb(32, 154, 178);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.welcome-container {
+    margin: 0 16px;
+    margin-top: 118px;
+    margin-bottom: 31px;
+}
+.welcome-container p{
+    display: none;
+}
+
+.welcome {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.blob {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    margin: 0;
+}
+
+#desk{
+    display: none;
+}
+
+.blob img {
+    width: 100%;
+    height: auto;
+}
+
+.img-kids-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 16px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.img-kids {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.welcome-text {
+    text-align: center;
+    margin: 0 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(32, 154, 178);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.welcome-text p {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.about-us{
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.about-us h2{
+    margin-bottom: 0px;
+}
+
+
+h2{
+    font-family: 'More Sugar', cursive;
+    text-align: center;
+    color: rgb(32, 154, 178);
+    font-size: 35px;
+    
+}
+
+.about-us-imgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us img{
+    height: 219.39px;
+    width: 244.71px;
+    margin: -18px;
+}
+
+.about-us p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(32, 154, 178);
+    position: relative;
+    z-index: 1;
+    margin: 0 50px;
+}
+
+a{
+    text-decoration: none;/*not */
+}
+
+.pg-btn {
+    display: block;
+    margin: 15px auto;
+    padding: 5px 10px;
+    background-color: white ;
+    color: rgb(32, 154, 178);
+    border-radius: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    border: 1px solid rgb(32, 154, 178);
+}
+
+.pg-btn:hover {
+    background-color: rgb(32, 154, 178);
+    color: white;
+}
+
+.gallery{
+    position: relative;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    z-index: 1;
+}
+
+.gallery-main-container{
+    display: flex;
+    padding: 0 10px;
+    gap: 5px;
+}
+
+.gallery-main-container img{
+    height: 101.84px;
+    width:85.55px;
+}
+
+.contact {
+    margin-top: 50px;
+    position: relative;
+}
+
+.contact-img-text {
+    position: relative;
+    z-index: 2; /* Higher z-index to ensure it stays above the blob */
+    text-align: center; /* Align text and image center */
+}
+
+.contact-us-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact img {
+    height: 212px;
+    width: 196px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin: 0 50px;
+    padding-bottom: 20px;
+}
+
+.blob2 {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    bottom: 0; 
+}
+
+.blob2 img{
+    width:100%;
+    height: auto;
+}
+
+footer{
+    margin:15px 25px;
+}
+
+/*buttons footer*/
+
+/* Dropdown Button */
+.dropbtn {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    color: rgb(32, 154, 178);
+    font-size: 16px;
+    border:none;
+    border-bottom: 0.5px solid black;
+    cursor: pointer;
+    padding: 18px 0; /* Adjust padding as needed */
+    width: 100%; /* Full width */
+    text-align: left; /* Optional: Align text to the left */
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+    color: black;
+}
+
+/* Dropdown container */
+.dropdown {
+    width: 100%; /* Ensure the container also takes full width */
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 14px;
+    font-style: italic;
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    color: rgb(32, 154, 178);
+    min-width: 100%; /* Make dropdown the same width as the button */
+    box-shadow: 2px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(32, 154, 178);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 9px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu when it is toggled */
+.show {
+    display: block;
+}
+
+.desk{
+    display: none;
+}
+
+/*==============about-us========================*/
+.about-us-content{
+    margin-top: 140px;
+}
+
+.about-us-content p{
+    padding-top: 30px;
+    line-height: 1.6;
+    letter-spacing: 1.4px;
+}
+
+.gallery-page-content{
+    margin-top: 140px;
+}
+
+
+/*----------------------------------------------------Responsive-----------------------------------------------------------------------*/
+
+
+
+@media only screen and (min-width: 1400px) {
+    nav img{
+        height: 57px;
+        width: 145px;
+    }
+    
+    nav {
+        padding: 20px 60px;
+    }
+
+    nav ul li a {
+        font-size: 32px;
+    }
+
+    .welcome-container {
+        margin: 0;
+        margin-left: 60px;
+        margin-top: 118px;
+        margin-bottom: 31px;
+        display: inline-block;
+        z-index: 1;
+        
+    }
+
+    .welcome-container p{
+        display:block;
+        font-size: 20px;
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    .img-kids-container {
+        display: flex;
+        margin-top: -360px;
+        z-index: 2;
+        justify-content: end;
+    }
+
+    .welcome-text-phone{
+        display: none;
+    }
+
+    #phn{
+        display: none;
+    }
+
+    .blob {
+        margin-top: -405px;
+    }
+
+    /*.blob2{
+        display: none;
+    }*/
+
+    .about-us {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        padding-top: 10px;
+        margin-bottom: 216px;
+        gap: 20px;
+    }
+    
+    
+    .about-us-right {
+        flex: 1; /* Allow the text container to take the remaining space */
+        padding-left: 20px;
+        padding-right: 45px; /* Add some padding on the left to create spacing */
+    }
+
+    .about-us img{
+        height: 572px;
+        width: 636px;
+        margin: 0px;
+        margin-left: 45px;
+    }
+
+    .about-us h2{
+        display: none;
+    }
+
+    #desk{
+        display: block;
+    }
+    h2{
+        font-size: 55px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        
+    }
+
+    .about-us-desk{
+        justify-content: center;
+    }
+    
+    .about-us p{
+        font-size: 20px;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    .about-us button{
+        background-color: rgba(154, 232, 235, 1) ;
+    }
+    
+    .pg-btn {
+        padding: 10px 19px;
+        color: rgb(32, 154, 178);
+        border: 1px solid rgb(32, 154, 178);
+        font-size: 15px;
+        
+    }
+
+    .gallery{
+        margin-top: 10px;
+        padding-top: 150px;
+    }
+
+    .gallery-main-container{
+        display: flex;
+        padding: 30px 50px;
+        gap: 40px;
+    }
+    
+    .gallery-main-container img{
+        height: 386.99px;
+        width:325px;
+        transition: 0.3s;
+    }
+
+    .gallery-main-container img:hover{
+        height: 416.99px;
+        width:355px;
+    }
+
+    .contact-img-text {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        margin-bottom: 20px;
+        gap: 0px;
+        padding-top: 100px;
+    }
+
+    .contact-us-img-container{
+        display: inline;
+    }
+
+    .contact-us-img-container img{
+        width: 639px;
+        height: 672px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    .contact h2{
+        font-size: 53px;
+        padding-left: 20px;
+    }
+
+    .phn{
+        display: none;
+    }
+
+    .desk{
+        display: block;
+    }
+
+    .row{
+        display: flex;
+        gap: 136px;
+    }
+
+    .row p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(32, 154, 178);
+        font-size: 16px;
+        
+    }
+
+    .row p a{
+        color: rgb(32, 154, 178);
+        transition: 0.3s;
+    }
+    .row p a:hover{
+        color: rgb(14, 104, 122);
+        font-size: 18px;
+    }
+    
+
+    footer img{
+        width: 145px;
+        height: 57px;
+    }
+
+
+
+    /*============ABOUT US===========*/
+    .about-us-content{
+        margin-top: 200px;
+        margin-left: 54px;
+        margin-right: 54px;
+    }
+
+    .about-us-content p{
+        padding-top: 60px;
+        font-size: 24PX;
+    }
+    
+    .gallery-page-content{
+        margin-top: 200px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1880px){
+    .blob {
+        margin-top: -495px;
+    }
+
+    .about-us{
+        padding-top: 250px;
+        margin-bottom: 450px;
+    }
+
+    .about-us-right {
+        padding-left: 279px;
+        padding-right: 195px;
+    }
+
+    .gallery{
+        margin-top: 30px;
+    }
+    
+    .blob2 img {
+        height: 800px;
+    }
+
+    .about-us-content{
+        margin-top: 200px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .row{
+        gap: 243px;
+    }
+
+    .gallery-main-container{
+        padding: 30px 215px;
+        gap: 50px;
+    }
+    
+    
+}
