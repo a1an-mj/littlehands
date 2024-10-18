@@ -1,8 +1,17 @@
 .images-gallery-desk{
     display: none;
 }
+
+.content-centre{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
 .images-gallery-phone{
-    margin-left: 10px;
+    padding: 0 2px;
+    margin: 0;
+
 }
 .type1 {
     height: 163px; 
@@ -30,7 +39,7 @@
 
 
 @media only screen and (min-width: 1440px){
-.images-gallery-phone{
+.content-centre{
     display: none;
 }
 
