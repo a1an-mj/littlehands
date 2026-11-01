@@ -4,6 +4,14 @@ body {
     box-sizing: border-box;
 }
 
+.has-corner-blob {
+    background-image: url('resources/blob-corner.webp');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
 nav {
     background-color: white;
     padding: 20px 25px;
@@ -159,6 +167,7 @@ a{
 
 .pg-btn {
     display: block;
+    width: fit-content;
     margin: 15px auto;
     padding: 5px 10px;
     background-color: white ;
@@ -194,6 +203,8 @@ a{
 .gallery-main-container img{
     height: 101.84px;
     width:85.55px;
+    object-fit: cover;
+    border-radius: 42% / 34%;
 }
 
 .contact {
@@ -376,10 +387,6 @@ footer{
         margin-top: -405px;
     }
 
-    /*.blob2{
-        display: none;
-    }*/
-
     .about-us {
         display: flex;
         justify-content: center; 
@@ -417,18 +424,18 @@ footer{
         
     }
 
-    .about-us-desk{
-        justify-content: center;
-    }
-    
     .about-us p{
         font-size: 20px;
         padding-top: 0;
         padding-bottom: 15px;
     }
 
-    .about-us button{
+    .about-us .pg-btn{
         background-color: rgba(154, 232, 235, 1) ;
+    }
+
+    .about-us .pg-btn:hover{
+        background-color: rgb(32, 154, 178);
     }
     
     .pg-btn {
