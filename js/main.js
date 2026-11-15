@@ -122,6 +122,82 @@
         } catch (err) { /* leave the plain table */ }
     }
 
+    /* ---------- Gallery lightbox ---------- */
+    var album = document.querySelector('[data-album]');
+    var box = document.querySelector('[data-lightbox]');
+    if (album && box && typeof box.showModal === 'function') {
+        var prints = Array.prototype.slice.call(album.querySelectorAll('[data-full]'));
+        var lbImg = box.querySelector('[data-lightbox-img]');
+        var lbCap = box.querySelector('[data-lightbox-caption]');
+        var lbCount = box.querySelector('[data-lightbox-count]');
+        var lbPrint = box.querySelector('.lightbox__print');
+        var current = 0;
+        var opener = null;
+
+        var show = function (i, dir) {
+            current = (i + prints.length) % prints.length;
+            var btn = prints[current];
+            var thumb = btn.querySelector('img');
+            lbImg.src = btn.getAttribute('data-full');
+            lbImg.alt = thumb.alt;
+            lbCap.textContent = btn.querySelector('.album__caption').textContent;
+            lbCount.textContent = (current + 1) + ' / ' + prints.length;
+            if (dir) {
+                lbPrint.style.setProperty('--swap-from', dir > 0 ? '40px' : '-40px');
+                lbPrint.classList.remove('is-changing');
+                void lbPrint.offsetWidth; // restart the animation
+                lbPrint.classList.add('is-changing');
+            }
+        };
+
+        // don't blow tiny photos up past ~1.6x, they get blurry
+        lbImg.addEventListener('load', function () {
+            lbImg.style.maxWidth = '';
+            var cap = lbImg.naturalWidth * 1.6;
+            if (cap && cap < lbImg.getBoundingClientRect().width) lbImg.style.width = cap + 'px';
+            else lbImg.style.width = '';
+        });
+
+        prints.forEach(function (btn, i) {
+            btn.addEventListener('click', function () {
+                opener = btn;
+                lbImg.style.width = '';
+                show(i);
+                box.showModal();
+                root.style.overflow = 'hidden';
+            });
+        });
+
+        box.querySelector('[data-lightbox-prev]').addEventListener('click', function () { show(current - 1, -1); });
+        box.querySelector('[data-lightbox-next]').addEventListener('click', function () { show(current + 1, 1); });
+        box.querySelector('[data-lightbox-close]').addEventListener('click', function () { box.close(); });
+
+        box.addEventListener('close', function () {
+            root.style.overflow = '';
+            if (opener) opener.focus();
+        });
+
+        // click on the dark backdrop closes
+        box.addEventListener('click', function (e) {
+            if (e.target === box || e.target.classList.contains('lightbox__stage')) box.close();
+        });
+
+        box.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowLeft') show(current - 1, -1);
+            if (e.key === 'ArrowRight') show(current + 1, 1);
+        });
+
+        // swipe on phones
+        var startX = null;
+        box.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+        box.addEventListener('touchend', function (e) {
+            if (startX === null) return;
+            var dx = e.changedTouches[0].clientX - startX;
+            if (Math.abs(dx) > 45) show(current + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1);
+            startX = null;
+        });
+    }
+
     /* ---------- Footer year ---------- */
     document.querySelectorAll('[data-year]').forEach(function (el) {
         el.textContent = new Date().getFullYear();
