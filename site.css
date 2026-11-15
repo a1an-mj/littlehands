@@ -21,7 +21,7 @@
     --cream: #FFF9EF;
     --white: #fff;
 
-    --font-display: 'More Sugar', 'Fredoka', 'Nunito', system-ui, sans-serif;
+    --font-display: 'More Sugar', 'Nunito', system-ui, sans-serif;
     --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
     --ease-out: cubic-bezier(.22, 1, .36, 1);
