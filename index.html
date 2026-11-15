@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,79 +7,402 @@
     <title>Little Hands</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://db.onlinewebfonts.com/c/0c2f66b3377085de6cb3df0ab6c0b333?family=More+Sugar" rel="stylesheet" type="text/css"/>
+    <meta name="description" content="Little Hands – playgroup, nursery, LKG, UKG, daycare and afterschool in Kadavanthra, Kochi.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&family=Nunito:wght@500..900&display=swap">
+    <link rel="preload" href="resources/fonts/more-sugar.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="site.css">
     <link rel="icon" type="image/png" href="resources/favicon.png">
-
-
+    <link rel="preload" as="image" href="resources/logo-mark.svg">
+    <script src="js/main.js" defer></script>
 </head>
-<body>
-    <nav>
-        <img src="resources/logo.webp" width="300" height="118" alt="little hands">
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-            <li><a href="about-us.html">about us</a></li>
-        </ul>
-    </nav>
-    <div class="hero-band">
-        <div class="hero">
-            <img class="welcome" src="resources/welcome.webp" width="683" height="434" alt="welcome to little hands">
-            <img class="img-kids" src="resources/kids-775.webp" srcset="resources/kids-400.webp 400w, resources/kids-775.webp 775w" sizes="(min-width: 1500px) 690px, (min-width: 600px) 46vw, calc(100vw - 32px)" width="775" height="540" alt="image of 4 kids">
-            <div class="welcome-text">
-                <p>Spark curiosity, grow creativity, and make friends. Let the adventure of learning begin at Little Hands!</p>
+<body id="top">
+    <header class="site-header" data-header>
+        <div class="site-header__pill">
+            <a class="brand" href="index.html" aria-label="Little Hands – home">
+                <img src="resources/logo-mark.svg" width="151" height="34" alt="Little Hands – a handful of hope">
+            </a>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about-us.html">About us</a>
+            </nav>
+            <a class="btn btn--nav" href="https://wa.me/919048391599?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Little%20Hands.">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 3C7 3 3 6.6 3 11c0 2.4 1.2 4.6 3.1 6.1L5.4 21l4-2.1c.8.2 1.7.3 2.6.3 5 0 9-3.6 9-8.1S17 3 12 3Z"/></svg>
+                <span>WhatsApp us</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+                <span class="sr-only">Menu</span>
+                <span class="menu-toggle__bars" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+    <section class="sky-hero" data-hero aria-labelledby="hero-title">
+        <div class="sky-hero__sky" aria-hidden="true">
+            <div class="cloud cloud--a"><img src="resources/cloud-1.webp" width="762" height="447" alt=""></div>
+            <div class="cloud cloud--b"><img src="resources/cloud-2.webp" width="642" height="399" alt=""></div>
+            <div class="cloud cloud--c"><img src="resources/cloud-3.webp" width="488" height="311" alt=""></div>
+            <div class="cloud cloud--d"><img src="resources/cloud-3.webp" width="488" height="311" alt=""></div>
+
+            <div class="kite">
+                <svg viewBox="0 0 420 640" width="420" height="640">
+                    <path class="kite__string" pathLength="1" d="M262 128 C 230 260, 120 300, 140 420 S 60 560, -40 660" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="2.2" stroke-linecap="round"/>
+                    <g class="kite__body">
+                        <path d="M262 8 L262 128 L190 98 Z" fill="#E23B3B"/>
+                        <path d="M262 8 L334 98 L262 128 Z" fill="#FFCC00"/>
+                        <path d="M190 98 L262 128 L262 248 Z" fill="#1E7FC4"/>
+                        <path d="M262 128 L334 98 L262 248 Z" fill="#47AA31"/>
+                        <path d="M262 8 L334 98 L262 248 L190 98 Z" fill="none" stroke="#2F2483" stroke-width="5" stroke-linejoin="round"/>
+                        <path d="M262 8 V248 M190 98 L334 98" stroke="#2F2483" stroke-opacity=".55" stroke-width="3"/>
+                        <g class="kite__tail">
+                            <path d="M262 248 C 250 282, 282 304, 268 338 S 252 392, 270 424" fill="none" stroke="#2F2483" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M256 290 l-20 -10 l2 22 Z M256 290 l20 -10 l-2 22 Z" fill="#FFCC00"/>
+                            <path d="M262 352 l-20 -10 l2 22 Z M262 352 l20 -10 l-2 22 Z" fill="#E23B3B"/>
+                            <path d="M268 412 l-18 -9 l2 20 Z M268 412 l18 -9 l-2 20 Z" fill="#47AA31"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <svg class="sparkle sparkle--1" viewBox="0 0 24 24"><path d="M12 0c.9 6.6 4.8 10.6 12 12-7.2 1.4-11.1 5.4-12 12-.9-6.6-4.8-10.6-12-12 7.2-1.4 11.1-5.4 12-12Z" fill="#fff"/></svg>
+            <svg class="sparkle sparkle--2" viewBox="0 0 24 24"><path d="M12 0c.9 6.6 4.8 10.6 12 12-7.2 1.4-11.1 5.4-12 12-.9-6.6-4.8-10.6-12-12 7.2-1.4 11.1-5.4 12-12Z" fill="#FFCC00"/></svg>
+            <svg class="sparkle sparkle--3" viewBox="0 0 24 24"><path d="M12 0c.9 6.6 4.8 10.6 12 12-7.2 1.4-11.1 5.4-12 12-.9-6.6-4.8-10.6-12-12 7.2-1.4 11.1-5.4 12-12Z" fill="#fff"/></svg>
+        </div>
+
+        <div class="sky-hero__content" data-hero-content>
+            <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Preschool &middot; Daycare &middot; Afterschool <span class="eyebrow__place">&middot; Kadavanthra, Kochi</span></p>
+            <h1 class="hero-title" id="hero-title">
+                <span class="hero-title__line">
+                    <span class="w" style="--i:0">Where</span>
+                    <span class="w w--little" style="--i:1"><em>little</em></span>
+                    <span class="w" style="--i:2">hands</span>
+                </span>
+                <span class="hero-title__line">
+                    <span class="w" style="--i:3">learn</span>
+                    <span class="w w--big" style="--i:4"><em>big</em><svg class="squiggle" viewBox="0 0 120 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 18 4, 30 4, 42 11 S 66 18, 80 10 S 106 4, 117 9" fill="none" stroke="#FFCC00" stroke-width="5" stroke-linecap="round"/></svg></span>
+                    <span class="w" style="--i:5">things</span>
+                </span>
+            </h1>
+            <p class="hero-lede">Kids learn through play here, from playgroup all the way to UKG. And for working parents, there&rsquo;s daycare and afterschool care too.</p>
+            <div class="hero-actions">
+                <a class="btn btn--primary" href="https://wa.me/919048391599?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Little%20Hands.">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 3C7 3 3 6.6 3 11c0 2.4 1.2 4.6 3.1 6.1L5.4 21l4-2.1c.8.2 1.7.3 2.6.3 5 0 9-3.6 9-8.1S17 3 12 3Z"/></svg>
+                    WhatsApp us
+                </a>
+                <a class="btn btn--secondary" href="tel:+919048391599">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
+                    Call 90483 91599
+                </a>
             </div>
         </div>
-        <div class="about-us">
-            <h2>about us</h2>
-            <div class="about-us-imgContainer">
-                <img src="resources/about-800.webp" srcset="resources/about-500.webp 500w, resources/about-800.webp 800w, resources/about-1280.webp 1280w" sizes="(min-width: 1500px) 636px, (min-width: 600px) 46vw, 75vw" width="1280" height="1158" loading="lazy" alt="about-us-img">
+
+        <a class="scroll-cue" href="#programs" aria-label="Scroll to our programs">
+            <span class="scroll-cue__dot" aria-hidden="true"></span>
+        </a>
+
+        <svg class="sky-hero__wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 64 C 180 20, 360 108, 560 74 S 900 8, 1100 56 S 1340 104, 1440 60 V120 H0 Z" fill="currentColor"/>
+        </svg>
+    </section>
+
+    <section class="programs" id="programs" aria-labelledby="programs-title">
+        <div class="programs__inner">
+            <header class="section-head" data-reveal>
+                <h2 class="section-title" id="programs-title">Our programs</h2>
+                <p class="section-sub">Every child is different, so talk to us and we&rsquo;ll help you pick the right class.</p>
+            </header>
+            <ul class="programs__grid" role="list">
+                <li class="program" data-reveal style="--reveal-delay:0.00s">
+                    <article class="program__card program__card--blue">
+                        <span class="program__icon" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><rect x="4" y="16" width="11" height="11" rx="2"/><rect x="17" y="16" width="11" height="11" rx="2"/><path d="M10.5 4 16.5 14h-12Z"/></svg></span>
+                        <h3 class="program__name">Playgroup</h3>
+                        <p class="program__line">First friends and first days away from home.</p>
+                    </article>
+                </li>
+                <li class="program" data-reveal style="--reveal-delay:0.08s">
+                    <article class="program__card program__card--green">
+                        <span class="program__icon" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><path d="M16 4C9 4 4 9 4 15.5S9 28 14 28c2.5 0 2.5-2.5 1.5-4s0-4 2.5-4h4c3.5 0 6-2.5 6-6C28 8.5 22.5 4 16 4Z"/><circle cx="10" cy="14" r="1.6"/><circle cx="14.5" cy="9.5" r="1.6"/><circle cx="20.5" cy="10" r="1.6"/></svg></span>
+                        <h3 class="program__name">Nursery</h3>
+                        <p class="program__line">Colours, stories, songs and plenty of messy play.</p>
+                    </article>
+                </li>
+                <li class="program" data-reveal style="--reveal-delay:0.16s">
+                    <article class="program__card program__card--red">
+                        <span class="program__icon" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><path d="M16 9c-4-3-8.5-3-12-2v18c3.5-1 8-1 12 2 4-3 8.5-3 12-2V7c-3.5-1-8-1-12 2Z"/><path d="M16 9v18"/></svg></span>
+                        <h3 class="program__name">LKG</h3>
+                        <p class="program__line">Getting ready to read, write and count.</p>
+                    </article>
+                </li>
+                <li class="program" data-reveal style="--reveal-delay:0.24s">
+                    <article class="program__card program__card--violet">
+                        <span class="program__icon" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><rect x="7" y="10" width="18" height="18" rx="5"/><path d="M12 10V8a4 4 0 0 1 8 0v2"/><rect x="11" y="18" width="10" height="6" rx="2"/></svg></span>
+                        <h3 class="program__name">UKG</h3>
+                        <p class="program__line">All set and confident for big school.</p>
+                    </article>
+                </li>
+                <li class="program" data-reveal style="--reveal-delay:0.32s">
+                    <article class="program__card program__card--pink">
+                        <span class="program__icon" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><path d="M6 26l2-7L21 6a2.8 2.8 0 0 1 4 4L12 23Z"/><path d="M18 9l4 4M8 19l4 4"/></svg></span>
+                        <h3 class="program__name">Afterschool</h3>
+                        <p class="program__line">Homework help and play once the school bell rings.</p>
+                    </article>
+                </li>
+                <li class="program" data-reveal style="--reveal-delay:0.40s">
+                    <article class="program__card program__card--navy">
+                        <span class="program__icon" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><path d="M5 15 16 6l11 9v12H5Z"/><path d="M16 23c-3-2-5-3.5-5-5.5a2.5 2.5 0 0 1 5-1 2.5 2.5 0 0 1 5 1c0 2-2 3.5-5 5.5Z"/></svg></span>
+                        <h3 class="program__name">Daycare</h3>
+                        <p class="program__line">A safe, happy place while you&rsquo;re at work.</p>
+                    </article>
+                </li>
+            </ul>
+            <div class="programs__cta" data-reveal>
+                <a class="btn btn--secondary" href="https://wa.me/919048391599?text=Hi!%20I%27d%20like%20to%20know%20which%20class%20suits%20my%20child.">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 3C7 3 3 6.6 3 11c0 2.4 1.2 4.6 3.1 6.1L5.4 21l4-2.1c.8.2 1.7.3 2.6.3 5 0 9-3.6 9-8.1S17 3 12 3Z"/></svg>
+                    Ask us about admission
+                </a>
             </div>
-            <div class="about-us-right">
-                <p>At Little Hands, every day is an adventure.<br>We believe in the power of play to foster holistic development. Our play-based curriculum encourages social, emotional, cognitive, and physical growth.</p>
-                <a class="pg-btn" href="about-us.html">read more</a>
+        </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+        <svg class="about__wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 0 H1440 V38 C 1260 82, 1080 20, 880 46 S 480 88, 280 52 S 60 30, 0 48 Z" fill="currentColor"/>
+        </svg>
+        <div class="about__inner">
+            <div class="about__photos" data-reveal>
+                <figure class="photo photo--main">
+                    <span class="photo__crop"><img src="resources/gallery-4-800.webp" srcset="resources/gallery-4-400.webp 400w, resources/gallery-4-800.webp 800w" sizes="(min-width: 980px) 400px, 70vw" width="800" height="986" loading="lazy" alt="A teacher sitting with children around a table in a Little Hands classroom"></span>
+                </figure>
+                <figure class="photo photo--small" data-parallax="-0.12">
+                    <span class="photo__crop"><img src="images/img11.webp" width="325" height="287" loading="lazy" alt="A smiling boy riding a toy in the play area"></span>
+                </figure>
+                <svg class="about__doodle about__doodle--sun" data-parallax="0.18" viewBox="0 0 64 64" aria-hidden="true">
+                    <circle cx="32" cy="32" r="12"/>
+                    <path d="M32 6v8M32 50v8M6 32h8M50 32h8M13.6 13.6l5.7 5.7M44.7 44.7l5.7 5.7M13.6 50.4l5.7-5.7M44.7 19.3l5.7-5.7"/>
+                </svg>
+                <svg class="about__doodle about__doodle--heart" data-parallax="-0.22" viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M16 27C9 22 4 18 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 6-5 10-12 15Z"/>
+                </svg>
+            </div>
+
+            <div class="about__text">
+                <h2 class="section-title about__title" id="about-title" data-reveal>About us</h2>
+                <p data-reveal style="--reveal-delay:.08s">Little Hands is a preschool and daycare on Muttathil Lane, Kadavanthra. Children can join us from 8 months old, and most of their day is spent learning through play.</p>
+                <p data-reveal style="--reveal-delay:.14s">Our teachers give every child individual attention, so each one can learn at their own pace. We also run tuition for students up to Class 8.</p>
+
+                <ul class="facts" role="list">
+                    <li class="fact" data-reveal style="--reveal-delay:.2s"><strong>8 months</strong><span>youngest age we take</span></li>
+                    <li class="fact" data-reveal style="--reveal-delay:.28s"><strong>Tuition</strong><span>up to Class 8</span></li>
+                    <li class="fact" data-reveal style="--reveal-delay:.36s"><strong>Transport</strong><span>options available</span></li>
+                </ul>
+
+                <div data-reveal style="--reveal-delay:.42s">
+                    <a class="btn btn--secondary about__more" href="about-us.html">
+                        More about us
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="gallery">
-        <h2>gallery</h2>
-        <div class="gallery-main-container">
-            <img src="resources/gallery-1-400.webp" srcset="resources/gallery-1-200.webp 200w, resources/gallery-1-400.webp 400w, resources/gallery-1-800.webp 800w" sizes="(min-width: 1500px) 340px, (min-width: 600px) 23vw, 46vw" width="800" height="986" loading="lazy">
-            <img src="resources/gallery-2-400.webp" srcset="resources/gallery-2-200.webp 200w, resources/gallery-2-400.webp 400w, resources/gallery-2-800.webp 800w" sizes="(min-width: 1500px) 340px, (min-width: 600px) 23vw, 46vw" width="800" height="986" loading="lazy">
-            <img src="resources/gallery-3-400.webp" srcset="resources/gallery-3-200.webp 200w, resources/gallery-3-400.webp 400w, resources/gallery-3-800.webp 800w" sizes="(min-width: 1500px) 340px, (min-width: 600px) 23vw, 46vw" width="800" height="986" loading="lazy">
-            <img src="resources/gallery-4-400.webp" srcset="resources/gallery-4-200.webp 200w, resources/gallery-4-400.webp 400w, resources/gallery-4-800.webp 800w" sizes="(min-width: 1500px) 340px, (min-width: 600px) 23vw, 46vw" width="800" height="986" loading="lazy">
+    </section>
+
+    <section class="snaps" id="gallery" aria-labelledby="snaps-title">
+        <svg class="snaps__wave snaps__wave--top" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 0 H1440 V44 C 1240 84, 1040 18, 820 42 S 420 86, 220 50 S 40 34, 0 52 Z" fill="currentColor"/>
+        </svg>
+
+        <header class="section-head snaps__head" data-reveal>
+            <h2 class="section-title snaps__title" id="snaps-title">Little moments</h2>
+            <p class="section-sub snaps__sub">A peek at a normal day at Little Hands.</p>
+        </header>
+
+        <div class="snaps__viewport" data-drift>
+            <ul class="snaps__line" role="list" data-drift-track>
+                <li class="snap" style="--i:0;--sag:0.306">
+                    <figure class="snap__print">
+                        <span class="snap__photo"><img src="resources/gallery-1-400.webp" srcset="resources/gallery-1-200.webp 200w, resources/gallery-1-400.webp 400w, resources/gallery-1-800.webp 800w" sizes="260px" width="800" height="986" loading="lazy" alt="A boy building with colourful blocks"></span>
+                        <figcaption>Building time</figcaption>
+                    </figure>
+                </li>
+                <li class="snap" style="--i:1;--sag:0.750">
+                    <figure class="snap__print">
+                        <span class="snap__photo"><img src="images/img4.webp" width="440" height="294" loading="lazy" alt="Children on the merry-go-round in the play yard"></span>
+                        <figcaption>Round and round</figcaption>
+                    </figure>
+                </li>
+                <li class="snap" style="--i:2;--sag:0.972">
+                    <figure class="snap__print">
+                        <span class="snap__photo"><img src="resources/gallery-3-400.webp" srcset="resources/gallery-3-200.webp 200w, resources/gallery-3-400.webp 400w, resources/gallery-3-800.webp 800w" sizes="260px" width="800" height="986" loading="lazy" alt="A painted jungle wall with animals and a river"></span>
+                        <figcaption>Our jungle wall</figcaption>
+                    </figure>
+                </li>
+                <li class="snap" style="--i:3;--sag:0.972">
+                    <figure class="snap__print">
+                        <span class="snap__photo"><img src="images/img5.webp" width="325" height="612" loading="lazy" alt="A child going down the red slide"></span>
+                        <figcaption>Slide time</figcaption>
+                    </figure>
+                </li>
+                <li class="snap" style="--i:4;--sag:0.750">
+                    <figure class="snap__print">
+                        <span class="snap__photo"><img src="resources/gallery-2-400.webp" srcset="resources/gallery-2-200.webp 200w, resources/gallery-2-400.webp 400w, resources/gallery-2-800.webp 800w" sizes="260px" width="800" height="986" loading="lazy" alt="Tricycles and ride-on toys lined up on the grass"></span>
+                        <figcaption>Ready to ride</figcaption>
+                    </figure>
+                </li>
+                <li class="snap" style="--i:5;--sag:0.306">
+                    <figure class="snap__print">
+                        <span class="snap__photo"><img src="images/img9.webp" width="670" height="339" loading="lazy" alt="The play yard with a slide and trampoline"></span>
+                        <figcaption>The play yard</figcaption>
+                    </figure>
+                </li>
+            </ul>
         </div>
-        <a class="pg-btn" href="gallery.html">view more</a>
-    </div>
-    <div class="contact">
-        <div class="contact-img-text">
-            <h2>Ready to embark on a learning adventure with us?</h2>
-            <div class="contact-us-img-container">
-                <img src="resources/contact-800.webp" srcset="resources/contact-400.webp 400w, resources/contact-800.webp 800w, resources/contact-1242.webp 1242w" sizes="(min-width: 1500px) 639px, (min-width: 600px) 46vw, 60vw" width="1242" height="1278" loading="lazy" alt="contact-us-img">
+
+        <div class="snaps__cta" data-reveal>
+            <a class="btn btn--secondary" href="gallery.html">
+                See the full gallery
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <svg class="snaps__wave snaps__wave--bottom" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 90 H1440 V40 C 1260 6, 1060 70, 840 44 S 440 4, 240 38 S 60 62, 0 36 Z" fill="currentColor"/>
+        </svg>
+    </section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+        <div class="visit__inner">
+            <header class="section-head visit__head" data-reveal>
+                <h2 class="section-title" id="visit-title">Come say hello</h2>
+                <p class="section-sub">Drop by to see the school, or message us first if you have any questions.</p>
+            </header>
+
+            <div class="visit__grid">
+                <div class="visit__cards">
+                    <article class="info-card" data-reveal>
+                        <span class="info-card__icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 29s-9-8.6-9-15a9 9 0 0 1 18 0c0 6.4-9 15-9 15Z"/><circle cx="16" cy="14" r="3.5"/></svg></span>
+                        <div>
+                            <h3 class="info-card__title">Where we are</h3>
+                            <address class="info-card__text">Muttathil Lane, Kadavanthra,<br>Kochi, Ernakulam, Kerala 682020</address>
+                            <a class="info-card__link" href="https://maps.app.goo.gl/EYAPrcvx6jmddKZQ7" target="_blank" rel="noopener">Get directions <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="info-card" data-reveal style="--reveal-delay:.08s">
+                        <span class="info-card__icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M16 9v7l5 3"/></svg></span>
+                        <div class="info-card__body">
+                            <h3 class="info-card__title">Opening hours <span class="open-badge" data-open-badge hidden></span></h3>
+                            <dl class="hours" data-hours>
+                                <div class="hours__row" data-days="1,2,3,4,5" data-open="08:00" data-close="19:00"><dt>Mon &ndash; Fri</dt><dd>8:00 am &ndash; 7:00 pm</dd></div>
+                                <div class="hours__row" data-days="6" data-open="08:00" data-close="17:30"><dt>Saturday</dt><dd>8:00 am &ndash; 5:30 pm</dd></div>
+                                <div class="hours__row" data-days="0"><dt>Sunday</dt><dd>Closed</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="info-card" data-reveal style="--reveal-delay:.16s">
+                        <span class="info-card__icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M9 14.4a20 20 0 0 0 8.6 8.6l2.9-2.9a1.3 1.3 0 0 1 1.3-.3 15 15 0 0 0 4.7.8 1.3 1.3 0 0 1 1.3 1.3V26a1.3 1.3 0 0 1-1.3 1.3A22.5 22.5 0 0 1 4.7 4.7 1.3 1.3 0 0 1 6 3.4h4.2a1.3 1.3 0 0 1 1.3 1.3c0 1.6.3 3.2.8 4.7a1.3 1.3 0 0 1-.3 1.3Z"/></svg></span>
+                        <div>
+                            <h3 class="info-card__title">Talk to us</h3>
+                            <p class="info-card__text"><a href="tel:+919048391599">+91 90483 91599</a><br><a href="tel:+918078794487">+91 80787 94487</a></p>
+                            <p class="info-card__links">
+                                <a class="info-card__link" href="https://wa.me/919048391599?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Little%20Hands.">WhatsApp <span aria-hidden="true">&rarr;</span></a>
+                                <a class="info-card__link" href="https://www.instagram.com/_.littlehands._?igsh=OXR3NTVmamdlZmd5" target="_blank" rel="noopener">Instagram <span aria-hidden="true">&rarr;</span></a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <figure class="map-frame" data-reveal style="--reveal-delay:.1s">
+                    <iframe title="Map showing Little Hands on Muttathil Lane, Kadavanthra" src="https://www.google.com/maps?q=Muttathil+Lane,+Kadavanthra,+Kochi,+Kerala+682020&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    <span class="map-frame__pin" aria-hidden="true">
+                        <img src="resources/logo-mark.svg" width="151" height="34" alt="">
+                    </span>
+                </figure>
+            </div>
+
+            <div class="visit__actions" data-reveal>
+                <a class="btn btn--primary" href="https://wa.me/919048391599?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Little%20Hands.">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 3C7 3 3 6.6 3 11c0 2.4 1.2 4.6 3.1 6.1L5.4 21l4-2.1c.8.2 1.7.3 2.6.3 5 0 9-3.6 9-8.1S17 3 12 3Z"/></svg>
+                    WhatsApp us
+                </a>
+                <a class="btn btn--secondary" href="tel:+919048391599">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
+                    Call 90483 91599
+                </a>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="footer-logo">
-            <img src="resources/logo.webp" width="300" height="118" loading="lazy" alt="little hands">
+    </section>
+    </main>
+    <footer class="site-footer">
+        <svg class="site-footer__wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 0 H1440 V40 C 1250 78, 1050 14, 830 40 S 430 84, 230 46 S 50 26, 0 44 Z" fill="currentColor"/>
+        </svg>
+
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+            <symbol id="hand" viewBox="0 0 32 34">
+                <path fill="currentColor" d="M16 33c-6 0-10-4-10-9.5 0-3 1.2-5 1.2-7.4 0-1.6 2.4-1.8 2.8 0l.9 3.6V6.5a1.9 1.9 0 0 1 3.8 0v9h.4V3.6a1.9 1.9 0 0 1 3.8 0v11.9h.4V6a1.9 1.9 0 0 1 3.8 0v10.6h.3V10a1.8 1.8 0 0 1 3.6 0v12.5C26.9 29 22.6 33 16 33Z"/>
+            </symbol>
+        </svg>
+        <div class="handprints" data-stamps aria-hidden="true">
+            <svg class="handprint" style="--i:0;--rot:-18deg;color:#E23B3B" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:1;--rot:12deg;color:#1E7FC4" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:2;--rot:-6deg;color:#FFCC00" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:3;--rot:20deg;color:#47AA31" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:4;--rot:-14deg;color:#E23B3B" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:5;--rot:8deg;color:#1E7FC4" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:6;--rot:-18deg;color:#FFCC00" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:7;--rot:12deg;color:#47AA31" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:8;--rot:-6deg;color:#E23B3B" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:9;--rot:20deg;color:#1E7FC4" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:10;--rot:-14deg;color:#FFCC00" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:11;--rot:8deg;color:#47AA31" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:12;--rot:-18deg;color:#E23B3B" viewBox="0 0 32 34"><use href="#hand"/></svg>
+            <svg class="handprint" style="--i:13;--rot:12deg;color:#1E7FC4" viewBox="0 0 32 34"><use href="#hand"/></svg>
         </div>
-        <div>
-            <h3>Location</h3>
-            <p><a href="https://maps.app.goo.gl/EYAPrcvx6jmddKZQ7">Muttathil Ln, Kadavanthra,<br>Kochi, Ernakulam, Kerala 682020</a></p>
+
+        <div class="site-footer__inner">
+            <div class="site-footer__brand">
+                <a class="footer-logo" href="index.html" aria-label="Little Hands – home">
+                    <img src="resources/logo-mark.svg" width="151" height="34" loading="lazy" alt="Little Hands – a handful of hope">
+                </a>
+                <p>Preschool, daycare and afterschool on Muttathil Lane, Kadavanthra, Kochi.</p>
+            </div>
+
+            <nav class="footer-col" aria-label="Footer">
+                <h2 class="footer-col__title">Explore</h2>
+                <ul role="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="#visit">Visit us</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-col">
+                <h2 class="footer-col__title">Get in touch</h2>
+                <ul role="list">
+                    <li><a href="tel:+919048391599">+91 90483 91599</a></li>
+                    <li><a href="tel:+918078794487">+91 80787 94487</a></li>
+                    <li><a href="https://wa.me/919048391599?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Little%20Hands.">WhatsApp</a></li>
+                    <li><a href="https://www.instagram.com/_.littlehands._?igsh=OXR3NTVmamdlZmd5" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-col__title">Open</h2>
+                <ul role="list" class="footer-col__hours">
+                    <li><span>Mon &ndash; Fri</span> 8:00 am &ndash; 7:00 pm</li>
+                    <li><span>Saturday</span> 8:00 am &ndash; 5:30 pm</li>
+                    <li><span>Sunday</span> Closed</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>Timing</h3>
-            <dl class="footer-hours">
-                <dt>Mon-Fri</dt><dd>8:00 am - 7:00 pm</dd>
-                <dt>Sat</dt><dd>8:00 am - 5:30 pm</dd>
-                <dt>Sun</dt><dd>Closed</dd>
-            </dl>
-        </div>
-        <div class="footer-links">
-            <h3>Contact-us</h3>
-            <a href="tel:+919048391599">+91 90483 91599</a>
-            <a href="https://www.instagram.com/_.littlehands._?igsh=OXR3NTVmamdlZmd5">Instagram</a>
-            <a href="https://wa.me/919048391599">WhatsApp</a>
+
+        <div class="site-footer__bottom">
+            <p>&copy; <span data-year>2026</span> Little Hands &middot; A handful of hope</p>
+            <a class="to-top" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
         </div>
     </footer>
 </body>
