@@ -359,7 +359,8 @@ body {
 
 /* film grain */
 .sky-hero::after,
-.snaps::after {
+.snaps::after,
+.cta-band::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -1855,6 +1856,83 @@ body {
         pointer-events: none;
         opacity: 0;
     }
+}
+
+/* ---------------------------------------------------------
+   About page
+   --------------------------------------------------------- */
+.about--intro {
+    background: var(--cream);
+    padding-top: clamp(40px, 6vw, 80px);
+}
+
+.values {
+    position: relative;
+    background: var(--white);
+    padding: clamp(96px, 10vw, 150px) 20px clamp(90px, 10vw, 140px);
+}
+
+.values__wave {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: clamp(36px, 5vw, 80px);
+    display: block;
+    color: var(--cream);
+}
+
+.values__inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media (min-width: 980px) {
+    .values__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.cta-band {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: clamp(100px, 11vw, 150px) 20px clamp(80px, 9vw, 120px);
+    background:
+        radial-gradient(80% 70% at 50% 0%, rgba(255, 255, 255, .16), transparent 70%),
+        var(--teal);
+    text-align: center;
+}
+
+.cta-band__wave {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: clamp(36px, 5vw, 80px);
+    display: block;
+    color: var(--white);
+    z-index: 4;
+}
+
+.cta-band__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.cta-band__title {
+    color: var(--white);
+    text-shadow: 0 2px 30px rgba(11, 83, 99, .3);
+}
+
+.cta-band__sub {
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* when a teal band sits right above the footer, the footer wave matches it */
+main:has(> .cta-band:last-child) + .site-footer .site-footer__wave {
+    color: var(--teal);
 }
 
 /* ---------------------------------------------------------
